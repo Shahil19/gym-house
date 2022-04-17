@@ -1,0 +1,41 @@
+[{
+        "id": 1,
+        "name": "PROJECT 5",
+        "sessionPrice": "49",
+        "blockPrice": "219",
+        "description": "Unique personalized one hour 121 sessions. Nutritional Guidance. Understand your macros, calorie intake, and the impact on what a good health balanced diet can do for you, your health, and your mind.",
+        "img": "https://static.wixstatic.com/media/fee603_221c197fe98646ed9e190004f73dfd78~mv2.jpg/v1/crop/x_0,y_1993,w_3937,h_3715/fill/w_385,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ExploreMore-37.jpg"
+    },
+    {
+        "id": 2,
+        "name": "PROJECT 10",
+        "sessionPrice": "39",
+        "blockPrice": "199",
+        "description": "Access to your coach. Talk with Ashley via WhatsApp during the week. Need a pep talk? Vent? Extra advice, she is there for you. ",
+        "img": "https://static.wixstatic.com/media/fee603_d36d9514c96e44f587c048039b2107ee~mv2.jpg/v1/crop/x_1134,y_0,w_4668,h_4397/fill/w_385,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ExploreMore-50.jpg"
+    },
+    {
+        "id": 3,
+        "name": "PROJECT VIRTUAL",
+        "sessionPrice": "25",
+        "blockPrice": "499 ",
+        "description": "Lifestyle Overhaul. There may be some things you are doing, not doing that can help you keep on track.",
+        "img": "https://static.wixstatic.com/media/fee603_1b96150c16b74492bb3435cb2f9a6380~mv2.jpg/v1/crop/x_0,y_144,w_738,h_696/fill/w_385,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20210506-WA0016.jpg"
+    },
+    {
+        "id": 4,
+        "name": "PROJECT ONLINE",
+        "sessionPrice": "16.25 ",
+        "blockPrice": "240",
+        "description": "Nutritional Guidance. Understand your macros, calorie intake, and the impact on what a good health balanced diet can do for you, your health, and your mind. ",
+        "img": "https://static.wixstatic.com/media/fee603_221c197fe98646ed9e190004f73dfd78~mv2.jpg/v1/crop/x_0,y_1993,w_3937,h_3715/fill/w_385,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ExploreMore-37.jpg"
+    },
+    {
+        "id": 5,
+        "name": "SMALL GROUP PT",
+        "sessionPrice": "13",
+        "blockPrice": "80",
+        "description": "Access to your coach. Talk with Ashley via WhatsApp during the week. Need a pep talk? Vent? Extra advice, she is there for you. ",
+        "img": "https://static.wixstatic.com/media/fee603_221c197fe98646ed9e190004f73dfd78~mv2.jpg/v1/crop/x_0,y_1993,w_3937,h_3715/fill/w_385,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ExploreMore-37.jpg"
+    }
+]
