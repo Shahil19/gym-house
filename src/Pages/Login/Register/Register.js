@@ -1,10 +1,20 @@
-import React, { useRef } from 'react';
-
+import React, { useRef, useState } from 'react';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 const Register = () => {
     const fullNameRef = useRef();
     const emailRef = useRef();
     const passwordRef = useRef();
     const confirmPasswordRef = useRef();
+
+    const [customError, setCustomError] = useState('');
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
 
     const handleRegisterUser = (event) => {
         event.preventDefault();
@@ -13,8 +23,16 @@ const Register = () => {
         const password = passwordRef.current.value;
         const confirmPassword = confirmPasswordRef.current.value;
 
-        console.log(fullName, email, password, confirmPassword);
+        if (password !== confirmPassword) {
+            setCustomError('Your two password did not matched');
+            return;
+        }
+        setCustomError('');
+
+        createUserWithEmailAndPassword(email, password);
+        console.log(user);
     }
+
     return (
         <div className="bg-grey-lighter min-h-screen flex flex-col">
             <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
@@ -47,10 +65,16 @@ const Register = () => {
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="confirm_password"
                             placeholder="Confirm Password" />
-                        <input type="submit" value='Sign Up' />
+                        {/* <input type="submit" value='Sign Up' className='text-white w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' /> */}
+                        {
+                            error && <p className='text-red-600'>{error.message}</p>
+                        }
+                        {
+                            customError && <p>{customError}</p>
+                        }
+                        <button type="submit" className='mt-3 text-white w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 ' >Create Account</button>
                     </form>
 
-                    {/* <input type="submit" className='text-white w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' >Create Account</input> */}
 
                     <div className="text-center text-sm text-grey-dark mt-4">
                         By signing up, you agree to the
