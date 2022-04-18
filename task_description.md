@@ -55,7 +55,7 @@ Here is the task that you need to do.
         13.3 What other services does `firebase` provide other than authentication
 
 14. You will create an about me page. It could be the `about` route. There will put your name and your image (picture is optional. However, if you put a photo, please put a professional look picture). And write a small paragraph (3-5 lines) about your goal. And how you will work hard to achieve your goal.
-    {`--------------- left ----------------`}
+    {--------------- done ----------------}
 
 ---
 
@@ -77,7 +77,7 @@ Here is the task that you need to do.
 6. Send Email Verification. Don't worry if the email goes to the spam folder or it doesn't go at all. As long as your code is there, you will be fine.
    {--------------- done ----------------}
 7. Add a link for Password reset (use toast)
-   {`--------------- left ----------------`}
+   {--------------- done ----------------}
 
 ### Optional But Highly Recommended:
 

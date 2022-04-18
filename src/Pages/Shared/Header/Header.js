@@ -16,7 +16,7 @@ const Header = () => {
     }
     const [user] = useAuthState(auth);
     return (
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" className='md:px-10'>
                 <Container>
                     <Navbar.Brand href="#home">PUMP HOUSE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -12,6 +12,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Mentors from './Pages/Home/Mentors/Mentors';
 import Blogs from './Pages/Blogs/Blogs';
 import ResetPassword from './Pages/Login/ResetPassword/ResetPassword';
+import About from './Pages/About/About';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <CheckOut></CheckOut>

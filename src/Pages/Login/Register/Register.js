@@ -4,6 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Register = () => {
     const fullNameRef = useRef();
     const emailRef = useRef();
@@ -35,8 +38,10 @@ const Register = () => {
             return;
         }
         setCustomError('');
-
         createUserWithEmailAndPassword(email, password);
+
+        toast('Welcome To Our Pump-House Family');
+
     }
 
     return (
@@ -96,6 +101,7 @@ const Register = () => {
                 </div>
                 <SocialLogin></SocialLogin>
             </div>
+            <ToastContainer />
         </div>
     );
 };
