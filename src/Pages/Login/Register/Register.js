@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 const Register = () => {
     const fullNameRef = useRef();
@@ -15,6 +16,10 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    const navigate = useNavigate();
+    if (user) {
+        navigate('/home')
+    }
 
     const handleRegisterUser = (event) => {
         event.preventDefault();
@@ -30,7 +35,6 @@ const Register = () => {
         setCustomError('');
 
         createUserWithEmailAndPassword(email, password);
-        console.log(user);
     }
 
     return (
@@ -65,13 +69,11 @@ const Register = () => {
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="confirm_password"
                             placeholder="Confirm Password" />
-                        {/* <input type="submit" value='Sign Up' className='text-white w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' /> */}
-                        {
-                            error && <p className='text-red-600'>{error.message}</p>
-                        }
-                        {
-                            customError && <p>{customError}</p>
-                        }
+
+                        {loading && <p className='text-cyan-500'>Loading...</p>}
+                        {error && <p className='text-red-600'>{error.message}</p>}
+                        {customError && <p className='text-red-600'>{customError}</p>}
+
                         <button type="submit" className='mt-3 text-white w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 ' >Create Account</button>
                     </form>
 
