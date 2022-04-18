@@ -17,7 +17,7 @@ Here is the task that you need to do.
 4. Home page will have a header (simple navbar), banner, services section, and a footer. The banner could be static or a carousel. Either one will be alright.
    {--------------- done ----------------}
 5. Add One extra section on the home page in addition to the 4 sections (header, banner, services, and footer) mentioned above.
-   {`--------------- left ----------------`}
+   {--------------- done - instructor section ----------------}
 
 ---
 

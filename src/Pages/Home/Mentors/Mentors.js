@@ -9,7 +9,7 @@ const Mentors = () => {
             .then(data => setMentors(data))
     }, [])
     return (
-        <section className='mt-20'>
+        <section id='instructor' className='mt-20'>
             <h2 className='text-5xl font-semibold text-center'>Instructors</h2>
             <div className='gap-y-5'>
                 {

@@ -18,12 +18,13 @@ const Header = () => {
     return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">PUMP HOUSE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link href="/home#service">Service</Nav.Link>
+                            <Nav.Link href="/home#instructor">Instructors</Nav.Link>
                             <Nav.Link as={Link} to="/checkout">Checkout</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             
@@ -34,7 +35,7 @@ const Header = () => {
                                 {
                                 !user 
                                 &&
-                                <button onClick={navigateToRegister} type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign Up</button>
+                                <button onClick={navigateToRegister} type="button" className="text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign Up</button>
                                 }
                             </Nav.Link>
 
