@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 const Register = () => {
     const fullNameRef = useRef();
@@ -48,27 +48,27 @@ const Register = () => {
                             type="text"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="fullname"
-                            placeholder="Full Name" />
+                            placeholder="Full Name" required />
 
                         <input
                             ref={emailRef}
                             type="text"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
-                            placeholder="Email" />
+                            placeholder="Email" required />
 
                         <input
                             ref={passwordRef}
                             type="password"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="password"
-                            placeholder="Password" />
+                            placeholder="Password" required />
                         <input
                             ref={confirmPasswordRef}
                             type="password"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="confirm_password"
-                            placeholder="Confirm Password" />
+                            placeholder="Confirm Password" required />
 
                         {loading && <p className='text-cyan-500'>Loading...</p>}
                         {error && <p className='text-red-600'>{error.message}</p>}
@@ -89,11 +89,8 @@ const Register = () => {
                     </div>
                 </div>
 
-                <div className="text-grey-dark mt-6">
-                    Already have an account?
-                    <a className="no-underline border-b border-blue text-blue" href="../login/">
-                        Log in
-                    </a>.
+                <div className="text-gray-900 mt-6 text-left">
+                    <p className='text-left'>Already have an Account? <span className='text-blue-700'><Link to='/login'>Login</Link></span></p>
                 </div>
             </div>
         </div>

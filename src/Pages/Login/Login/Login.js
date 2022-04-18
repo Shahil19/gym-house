@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -20,8 +20,11 @@ const Login = () => {
     }
 
     const navigate = useNavigate();
+
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/')
+        navigate(from, { replace: true })
     }
 
     return (
@@ -34,13 +37,13 @@ const Login = () => {
                             type="text"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
-                            placeholder="Email" />
+                            placeholder="Email" required />
 
                         <input
                             type="password"
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="password"
-                            placeholder="Password" />
+                            placeholder="Password" required />
                         {
                             loading && <p className='text-cyan-500'>Loading...</p>
                         }
@@ -63,7 +66,7 @@ const Login = () => {
                 </div>
 
                 <div className="text-gray-900 mt-6 text-left">
-                    <p className='text-left'>New to Pump-house? <span className='text-blue-700'>Sign Up</span></p>
+                    <p className='text-left'>New to Pump-house? <span className='text-blue-700'><Link to='/register'>Sign Up</Link></span></p>
                 </div>
             </div>
         </section>

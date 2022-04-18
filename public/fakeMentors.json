@@ -1,0 +1,43 @@
+[{
+        "id": 1,
+        "name": "TYLER ",
+        "title": "Certified Yoga Instructor",
+        "description": "Start Small, Dream Big Yoga is a way of life.  Little changes can make big improvements on and off the mat. Come Join Us!",
+        "img": "https://static.wixstatic.com/media/dba0d2_c6255b3181ed45f99679f6adf285a4b4~mv2.jpg/v1/crop/x_300,y_0,w_2400,h_2400/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_7033_edited.jpg"
+    },
+    {
+        "id": 2,
+        "name": "MICHELLE",
+        "title": "Certified Personal Trainer ",
+        "description": "Michelle is  ACE certified Personal Trainer and teaches bootcamp, hot barre intensity, and strength training. ",
+        "img": "https://static.wixstatic.com/media/dba0d2_850174d36e04473cb1012e29c122f596~mv2.jpg/v1/crop/x_0,y_0,w_484,h_484/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Michelle%20head%20shot_JPG.jpg"
+    },
+    {
+        "id": 3,
+        "name": "ALEC",
+        "title": "Certified Physical Therapist",
+        "description": "Be stronger, Be Faster, & Master the Foundations Alec focuses on functional fitness programs phased to challenge both the elite athlete  ",
+        "img": "https://static.wixstatic.com/media/dba0d2_820256751f3d4864b5ce9fb92d602aaf~mv2.jpg/v1/crop/x_600,y_0,w_2400,h_2400/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_7348.jpg"
+    },
+    {
+        "id": 4,
+        "name": "SHANE ",
+        "title": "Certified Personal Trainer ",
+        "description": "Shane is a dedicated professional athlete with over 20+ years of service to the fitness community.  His passion is to provided others with the level of training he was fortunate to have .",
+        "img": "https://static.wixstatic.com/media/dba0d2_ab4ee1840d00447f9ac0de6a4b80375d~mv2.jpg/v1/crop/x_600,y_0,w_2400,h_2400/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_7345.jpg"
+    },
+    {
+        "id": 5,
+        "name": " MARGARET ",
+        "title": "Certified Personal Trainer",
+        "description": "Margaret brings the energy and the sunshine.  You'll never feel like your having a bad day in her presence!  She comes to us from Blue Ash and brings with her years of group training experience. ",
+        "img": "https://static.wixstatic.com/media/dba0d2_4bcb777ecccb496db092fa95241326b9~mv2.jpg/v1/crop/x_0,y_375,w_2250,h_2250/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20210205_134336_edited.jpg"
+    },
+    {
+        "id": 6,
+        "name": "ERIQUE",
+        "title": "Certified Dietitian",
+        "description": "Starting November 3rd Erique will be bringing his FLY FITNESS curcuit to MyFitness Suites.  Fly Fitness is a class for the High School Athlete in training",
+        "img": "https://static.wixstatic.com/media/dba0d2_81a7b8d84abe42c0a3235421c41f6472~mv2.jpg/v1/fill/w_176,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/587C034C-7560-4282-BC46-724D5BD587C9_edi.jpg"
+    }
+]
