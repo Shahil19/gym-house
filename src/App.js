@@ -10,6 +10,7 @@ import RequireAuth from './Pages/Shared/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Mentors from './Pages/Home/Mentors/Mentors';
+import Blogs from './Pages/Blogs/Blogs';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <CheckOut></CheckOut>
