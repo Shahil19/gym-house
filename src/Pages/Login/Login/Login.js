@@ -2,6 +2,7 @@ import React from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [
@@ -10,6 +11,8 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+
+
 
     const handleLogin = event => {
         event.preventDefault();
@@ -68,6 +71,7 @@ const Login = () => {
                 <div className="text-gray-900 mt-6 text-left">
                     <p className='text-left'>New to Pump-house? <span className='text-blue-700'><Link to='/register'>Sign Up</Link></span></p>
                 </div>
+                <SocialLogin></SocialLogin>
             </div>
         </section>
     );

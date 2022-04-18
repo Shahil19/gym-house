@@ -31,14 +31,14 @@ Here is the task that you need to do.
    {--------------- done ----------------}
 
 9. If you reload the protected/private route (after login), this page will not redirect the user to the login page. Instead, it will keep the logged-in user on the protected route.
-   {`--------------- left ----------------`}
+   {--------------- done ----------------}
 
 ---
 
 10. You Must implement Email-password based authentication. You will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view. You can use `react firebase hook` to implement the login system. And don't forget to make the Email and password field a required field. {--------------- done ----------------}
 
 11. Also, implement at least one extra login, which could be (facebook, github, google, etc).
-    {`--------------- left ----------------`}
+    {--------------- done ----------------}
 
 12. Once logged in, the log out/sign out button should appear on the header, which will log out the user once clicked.
     {--------------- done ----------------}
