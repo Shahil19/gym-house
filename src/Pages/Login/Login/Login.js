@@ -53,10 +53,9 @@ const Login = () => {
                         {
                             error && <p className='text-red-600'>{error.message}</p>
                         }
-                        <button type="submit" className='mt-3 text-white w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 ' >Log In</button>
+                        <button type="submit" className='my-3 text-white w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 ' >Log In</button>
+                        <Link className='text-blue-600 ' to='/reset-password' >Forget Password?</Link>
                     </form>
-
-
                     <div className="text-center text-sm text-grey-dark mt-4">
                         By signing up, you agree to the
                         <a className="no-underline border-b border-grey-dark text-grey-dark" href="#">

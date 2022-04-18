@@ -46,7 +46,7 @@ Here is the task that you need to do.
 ---
 
 13. Add two more routes. one route will be `blogs`. On the blog page, you will need to answer these three questions. This won't be a protected route
-    {`--------------- left ----------------`}
+    {--------------- done ----------------}
 
         13.1 Difference between `authorization` and `authentication`
 
@@ -75,7 +75,7 @@ Here is the task that you need to do.
 5. Display error when user email address or password don't match.
    {--------------- done ----------------}
 6. Send Email Verification. Don't worry if the email goes to the spam folder or it doesn't go at all. As long as your code is there, you will be fine.
-   {`--------------- left ----------------`}
+   {--------------- done ----------------}
 7. Add a link for Password reset (use toast)
    {`--------------- left ----------------`}
 
